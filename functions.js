@@ -5,9 +5,35 @@
 function toggleDescription(e, ele) {
     e.stopPropagation();
 
-    let moreInfo = ele.querySelector('.more-info');
+    let moreInfo = ele.closest('li').querySelector('.more-info');
 
-    console.log(moreInfo, moreInfo.classList.contains('hidden'));
+    let currentIsHidden = moreInfo.classList.contains('hidden');
 
-    moreInfo.classList.contains('hidden') ? moreInfo.classList.remove('hidden') : moreInfo.classList.add('hidden');
+    let allMoreInfo = document.querySelectorAll('.more-info');
+
+    Array.from(allMoreInfo).forEach((btn) => {
+        btn.classList.add('hidden');
+        if (!btn.classList.contains('hidden')) {
+            btn.classList.add('hidden');
+        }
+    });
+
+    if (currentIsHidden) {
+        moreInfo.classList.remove('hidden');
+    }
+}
+
+/**
+ * Muestra u oculta el menú de navegación.
+ */
+function toggleMenu() {
+    let nav = document.getElementById('box-navbar');
+    nav.classList.contains('hidden') ? nav.classList.remove('hidden') : nav.classList.add('hidden');
+}
+
+/**
+ * Mueve hacia el comienzo de la página.
+ */
+function goToTop() {
+    window.scrollTo(0, 0);
 }

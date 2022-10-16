@@ -65,17 +65,21 @@
         <header class="text-gray-500">
             <nav class="container flex flex-wrap items-center mx-auto px-4 py-3">
                 <a href="https://social.fryntiz.dev"
-                   class="font-bold hover:text-gray-300 mr-3 text-gray-800 text-xl">
+                   class="font-bold hover:text-gray-300 mr-3 text-gray-600 text-2xl">
                    <h1>
-Mis Redes Sociales
-                   </h1>
-
+                       Mis Redes Sociales
+                       <span class="text-xs block text-right">
+                            Raúl Caro Pastorino
+                       </span>
+                    </h1>
                 </a>
+
                 <div class="ml-auto px-2 lg:order-2">
 </div>
-                <a class="hover:bg-gray-800 hover:text-white px-3 py-2 rounded text-gray-800 lg:hidden" data-name="nav-toggler" data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;NabMenuToggler&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^nav|[data-name=nav-menu]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;l&quot;:{&quot;class.remove&quot;:&quot;hidden&quot;}}]},{&quot;t&quot;:&quot;#gt# span:nth-of-type(1)&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;rotationZ&quot;:45,&quot;yPercent&quot;:300}}]},{&quot;t&quot;:&quot;#gt# span:nth-of-type(2)&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;autoAlpha&quot;:0}}]},{&quot;t&quot;:&quot;#gt# span:nth-of-type(3)&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;rotationZ&quot;:-45,&quot;yPercent&quot;:-300}}]}]},&quot;pdef&quot;:&quot;true&quot;,&quot;trev&quot;:&quot;true&quot;}]}"> <span class="block border-b-2 border-current my-1 w-6"></span> <span class="block border-b-2 border-current my-1 w-6"></span> <span class="block border-b-2 border-current my-1 w-6"></span>
-                </a>
-                <div data-name="nav-menu" class="lg:flex lg:space-x-4 lg:space-y-0 lg:w-auto space-y-2 w-full hidden lg:items-center flex-grow">
+                <span id="btn-menu" class="hover:bg-gray-800 hover:text-white px-3 py-2 rounded text-gray-800 lg:hidden hover:cursor-pointer" data-name="nav-toggler" data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;NabMenuToggler&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^nav|[data-name=nav-menu]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;l&quot;:{&quot;class.remove&quot;:&quot;hidden&quot;}}]},{&quot;t&quot;:&quot;#gt# span:nth-of-type(1)&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;rotationZ&quot;:45,&quot;yPercent&quot;:300}}]},{&quot;t&quot;:&quot;#gt# span:nth-of-type(2)&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;autoAlpha&quot;:0}}]},{&quot;t&quot;:&quot;#gt# span:nth-of-type(3)&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;rotationZ&quot;:-45,&quot;yPercent&quot;:-300}}]}]},&quot;pdef&quot;:&quot;true&quot;,&quot;trev&quot;:&quot;true&quot;}]}"> <span class="block border-b-2 border-current my-1 w-6"></span> <span class="block border-b-2 border-current my-1 w-6"></span> <span class="block border-b-2 border-current my-1 w-6"></span>
+                </span>
+
+                <div id="box-navbar" data-name="nav-menu" class="lg:flex lg:space-x-4 lg:space-y-0 lg:w-auto space-y-2 w-full hidden lg:items-center flex-grow">
                     <div class="flex flex-col ml-auto lg:flex-row">
                         <a href="#box-profesional"
                             title="Ir a la sección profesional"
@@ -224,8 +228,8 @@ Mis Redes Sociales
         <!-- Tarjetas con los enlaces -->
         <section class="py-16 text-gray-200">
             <div class="container mx-auto px-4 relative">
-                <div class="flex flex-wrap -mx-4 items-center">
-                    <div class="px-4 w-full">
+                <div class="">
+                    <div class="px-4 sm:w-full md:w-full lg:w-10/12 xl:8/12 2xl:6/12 m-auto">
 
                         <!-- Section links Profesional -->
                         <div id="box-profesional" class="bg-card-profesional border rounded-xl shadow p-2 pr-8">
@@ -239,7 +243,7 @@ Mis Redes Sociales
                                     <div class="text-color-blue">
                                          <ul class="text-left">
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                         class="social-icon-card fill-current text-color-blue"
@@ -257,7 +261,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -266,15 +270,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icon-card fill-orange-500" viewBox="0 0 512 512">
                                                             <path
@@ -290,7 +296,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -299,15 +305,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icon-card fill-black-800" viewBox="0 0 496 512">
                                                             <path
@@ -323,7 +331,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -332,8 +340,10 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
@@ -342,7 +352,7 @@ Mis Redes Sociales
 
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                         class="social-icon-card fill-yellow-500"
@@ -360,7 +370,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -370,8 +380,10 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
@@ -379,7 +391,7 @@ Mis Redes Sociales
 
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <span class="mr-3">
                                                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -399,7 +411,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -409,14 +421,17 @@ Mis Redes Sociales
                                                         </svg>
                                                     </span>
 
-                                                    <span class="more-info hidden">
+                                                </div>
+
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icon-card fill-red-500" viewBox="0 0 576 512">
                                                             <path
@@ -432,7 +447,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -441,15 +456,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              class="social-icon-card fill-red-500"
@@ -468,7 +485,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -477,8 +494,10 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
@@ -503,7 +522,7 @@ Mis Redes Sociales
                                     <div class="text-color-blue">
                                         <ul class="text-left">
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon-card fill-blue-400">
                                                             <path
@@ -519,7 +538,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -528,15 +547,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon-card fill-blue-800">
                                                             <path
@@ -552,7 +573,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -561,15 +582,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon-card fill-pink-500">
                                                             <path
@@ -585,7 +608,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -594,15 +617,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon-card fill-purple-800">
                                                             <path
@@ -617,7 +642,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -627,7 +652,10 @@ Mis Redes Sociales
                                                         </svg>
                                                     </span>
 
-                                                    <span class="more-info hidden">
+                                                </div>
+
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
@@ -650,7 +678,7 @@ Mis Redes Sociales
                                     <div class="text-color-blue">
                                         <ul class="text-left">
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="social-icon-card fill-red-500">
                                                             <path
@@ -666,7 +694,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -675,15 +703,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="social-icon-card fill-red-500">
                                                             <path
@@ -699,7 +729,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -708,15 +738,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon-card fill-purple-400">
                                                             <path
@@ -732,7 +764,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -741,15 +773,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon-card fill-black">
                                                             <path
@@ -765,7 +799,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -774,8 +808,10 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
@@ -798,7 +834,7 @@ Mis Redes Sociales
                                     <div class="text-color-blue">
                                         <ul class="text-left">
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon-card fill-blue-600">
                                                             <path
@@ -814,7 +850,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -823,15 +859,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon-card fill-blue-600">
                                                             <path
@@ -847,7 +885,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -856,15 +894,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon-card fill-orange-600">
                                                             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -881,7 +921,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -890,15 +930,17 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
                                             </li>
 
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icon-card fill-red-500">
                                                             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -915,7 +957,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -924,8 +966,10 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
@@ -950,7 +994,7 @@ Mis Redes Sociales
                                     <div class="text-color-blue">
                                         <ul class="text-left">
                                             <li class="bg-gray-100 my-3 py-4 px-3 rounded">
-                                                <div class="sm:w-full md:w-7/12 inline-block m-0 p-0">
+                                                <div class="sm:w-full md:w-7/12 sm:block md:inline-block m-0 p-0">
                                                     <span class="mr-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="social-icon-card fill-blue-500">
                                                             <path
@@ -966,7 +1010,7 @@ Mis Redes Sociales
                                                     </span>
                                                 </div>
 
-                                                <div class="box-more-info m-0 sm:w-full md:w-4/12 text-right sm:text-center md:p-3 sm:p-2 inline-block">
+                                                <div class="box-more-info m-0 sm:w-full sm:block lg:inline-block lg:w-4/12 text-right sm:text-center md:p-3 sm:p-2">
                                                     <span class="text-sm bg-blue-600 p-4 text-gray-200 hover:cursor-pointer rounded">
                                                         Más información
 
@@ -975,8 +1019,10 @@ Mis Redes Sociales
                                                                 d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z" />
                                                         </svg>
                                                     </span>
+                                                </div>
 
-                                                    <span class="more-info hidden">
+                                                <div class="more-info w-full bg-yellow-50 text-gray-600 mt-10 p-4 rounded shadow text-left hidden">
+                                                    <span class="block w-full">
                                                         Descripción
                                                     </span>
                                                 </div>
@@ -991,6 +1037,21 @@ Mis Redes Sociales
                 </div>
             </div>
         </section>
+
+
+        <div class="absolute right-0 p-5 pb-10">
+            <span class="p-3 rounded ">
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="btn-go-top w-24 h-24 fill-sky-900 hover:fill-sky-600 hover:cursor-pointer"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm11.3-395.3l112 112c4.6 4.6 5.9 11.5 3.5 17.4s-8.3 9.9-14.8 9.9H304v96c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V256H144c-6.5 0-12.3-3.9-14.8-9.9s-1.1-12.9 3.5-17.4l112-112c6.2-6.2 16.4-6.2 22.6 0z" />
+                </svg>
+
+            </span>
+        </div>
+
 
         <script src="functions.js"></script>
         <script src="scripts.js"></script>
