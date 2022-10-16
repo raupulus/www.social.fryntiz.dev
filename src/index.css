@@ -1,8 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+/*
+@import url('./fonts/Asap-Medium.ttf');
+@import url('./fonts/Montserrat-Regular.ttf');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Merriweather:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+
+@layer base {
+    html {
+        font-family: Merriweather, system-ui, sans-serif;
+    }
+}
+*/
+
+
 
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', serif;
 }
 
 .text-container {
