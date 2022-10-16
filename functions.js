@@ -5,6 +5,7 @@
 function toggleDescription(e, ele) {
     e.stopPropagation();
 
+    console.log('llega');
     let moreInfo = ele.closest('li').querySelector('.more-info');
 
     let currentIsHidden = moreInfo.classList.contains('hidden');
