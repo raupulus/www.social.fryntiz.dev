@@ -24,7 +24,11 @@
 }
 */
 
-
+@layer components {
+    .social-icon-card {
+        @apply inline-block mb-0 sm:mb-0 md:mb-2 w-14 rounded p-2 sm:p-0 md:p-2;
+    }
+}
 
 body {
     font-family: 'Montserrat', serif;
@@ -32,17 +36,11 @@ body {
 
 .text-container {
     font-family: 'Asap', sans-serif;
+    font-size: 2rem;
 }
 
 .text-color-blue {
     color: #0056b3;
-}
-
-.social-icon-card {
-    display: inline-block;
-    width: 3.5rem;
-    border-radius: 1rem;
-    padding: 0.4rem;
 }
 
 .background-gray {
