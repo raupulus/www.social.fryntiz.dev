@@ -1,0 +1,9 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Fresh Material - Indigo",
+    "workbench.preferredDarkColorTheme": "Monokai",
+    "workbench.preferredHighContrastColorTheme": "Monokai",
+    "workbench.preferredHighContrastLightColorTheme": "Monokai",
+    "workbench.preferredLightColorTheme": "Monokai",
+    "material-icon-theme.activeIconPack": "vue"
+}
